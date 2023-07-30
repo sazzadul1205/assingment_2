@@ -4,6 +4,14 @@
 
 
  /* nav section */
+ .header{
+    width: 100%;
+    margin: auto;
+ }
+ main{
+    width: 100%;
+    margin: auto;
+ }
  .nav {
      display: flex;
      justify-content: space-around;
@@ -340,16 +348,13 @@ font-weight: 400;
 line-height: 30px; /* 166.667% */
  }
  .play-inst-img2{
-    height: 90%;
-    margin-left: 90px;
+    position: relative;
+    width: 100%;
  }
  .play-inst-img1{
-    position: relative;
-    margin: 1px;
-    right: 750px;
-    top: 100px;
-    border-radius: 8px;
-    background: url(<path-to-image>), lightgray 0px -0.304px / 100% 117.229% no-repeat;
+    position: absolute;
+    right: 700px;
+    top: 3000px;
 }
 /* games section */
 .games-btn{
@@ -377,12 +382,12 @@ line-height: 30px; /* 166.667% */
     cursor: pointer;
 }
 /* footer section */
-footer{
+.footer{
     background: #0B0223;
     color: #FFF;
     display: flex;
     justify-content: center;
-    padding: 130px 553px;
+    /* padding: 130px 553px; */
     
 }
 .fotter-logo{
@@ -439,7 +444,8 @@ flex-shrink: 0;
 }
 
 /* media section */
-@media (max-width: 575.9808px) {
+
+@media screen and (max-width: 575.9808px) {
     .nav{
         flex-direction: column;
         align-items: center;
@@ -489,19 +495,34 @@ flex-shrink: 0;
         text-align: center;
     }
     .play-inst-img2{
-        width: 100%;
-        margin: 0;
+        width: 70%;
+        left: 100px;
+     }
+     .play-inst-img1{
+        width: 40%;
+        position: absolute;
+        right: 200px;
+        top: 450px;
     }
-    .play-inst-img2{
+    .game-btn{
+        align-content: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
-}
-/* @media (max-width: 575.9808px) {
-    .nav,.nav-img,.promo,.banner,.games-img-cont,.play,.games-img-cont,.game-btn,footer{
-        padding: 100px;
+    .fotter-navbar ul{
+        gap: 2px;
+        align-items: center;
+        flex-direction: column;
+    }
+    .footer-icon{
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        width: 100%;
-
     }
- } */
+    .footer-policy ul{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 575.9808px) and (max-width: 767.98px) { 
+    
+ }
