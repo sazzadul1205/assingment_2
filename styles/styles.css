@@ -4,7 +4,7 @@
 
 
  /* nav section */
- nav {
+ .nav {
      display: flex;
      justify-content: space-around;
      margin-top: 1.25rem;
@@ -313,6 +313,7 @@
      justify-content: space-between;
      align-items: center;
      margin: 240px;
+     gap: 80px;
  }
 
  .play-content h1 {
@@ -338,10 +339,14 @@ font-style: normal;
 font-weight: 400;
 line-height: 30px; /* 166.667% */
  }
+ .play-inst-img2{
+    height: 90%;
+    margin-left: 90px;
+ }
  .play-inst-img1{
     position: relative;
     margin: 1px;
-    left: 200px;
+    right: 750px;
     top: 100px;
     border-radius: 8px;
     background: url(<path-to-image>), lightgray 0px -0.304px / 100% 117.229% no-repeat;
@@ -428,7 +433,75 @@ footer{
 .fotter-logo img{
     margin-top: 25px;
     margin-right: 5px;
-    width: 86.041px;
+    width: 86.0416px;
 height: 40px;
 flex-shrink: 0;
 }
+
+/* media section */
+@media (max-width: 575.9808px) {
+    .nav{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;   
+        
+    }
+    .nav-list ul{
+        flex-direction: column;
+    }
+    .promo{
+        flex-direction: column;
+    }
+    .promo-text-head{
+        font-size: 48px;
+    }
+    .pink-btn{
+        margin-bottom: .625rem;
+    }
+    .res{
+        width: 100%;
+        margin: 0;
+    }
+    .banner{
+        flex-direction: column;
+    }
+    .banner-head{
+        /* text-align: center; */
+        justify-content: center;
+
+    }
+    .banner-discription,.banner-qout{
+        text-align: center;
+    }
+    .banner-btn-cont{
+        text-align: center;
+    }
+    .games-img-cont{
+        flex-direction: column;
+    }
+    .games-img-cont img{
+        width: 80%;
+    }
+    .play{
+        flex-direction: column;
+    }
+    .play-content h1, .play-content p{
+        text-align: center;
+    }
+    .play-inst-img2{
+        width: 100%;
+        margin: 0;
+    }
+    .play-inst-img2{
+    }
+}
+/* @media (max-width: 575.9808px) {
+    .nav,.nav-img,.promo,.banner,.games-img-cont,.play,.games-img-cont,.game-btn,footer{
+        padding: 100px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+    }
+ } */
